@@ -17,7 +17,7 @@ import pkg_resources
 from datetime import datetime
 
 project = u"sagemaker"
-version = pkg_resources.require(project)[0].version
+version = '0.0.0'
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
