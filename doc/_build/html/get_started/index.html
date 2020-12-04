@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Get Started with Amazon SageMaker &mdash; sagemaker 2.17.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="https://a0.awsstatic.com/s_code/js/3.0/awshome_s_code.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Amazon SageMaker Example Notebooks" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> sagemaker
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.17.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Get started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Get Started with Amazon SageMaker</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#get-started-with-sagemaker-studio">Get started with SageMaker Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-started-with-sagemaker-notebook-instances">Get started with SageMaker Notebook Instances</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#introduction-to-applying-machine-learning">Introduction to applying machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#training">Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#inference">Inference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">sagemaker</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Get Started with Amazon SageMaker</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/get_started/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="get-started-with-amazon-sagemaker">
+<h1>Get Started with Amazon SageMaker<a class="headerlink" href="#get-started-with-amazon-sagemaker" title="Permalink to this headline">¶</a></h1>
+<p>You have several options for how you can use SageMaker.</p>
+<ol class="arabic simple">
+<li><p>IDE: SageMaker Studio</p></li>
+<li><p>Console: SageMaker Notebook Instances</p></li>
+<li><p>Command line &amp; SDK: AWS CLI, boto3, &amp; SageMaker Python SDK</p></li>
+<li><p>3rd party integrations: Kubeflow &amp; Kubernetes operators</p></li>
+</ol>
+<p>If you’re new to SageMaker we recommend starting with more feature-rich SageMaker Studio.
+It uses the familiar JupyterLab interface and has seamless integration with a variety of deep learning and data science environments and scalable compute resources for training, inference, and other ML operations.
+Studio offers teams and companies easy on-boarding for their team members, freeing them up from complex systems admin and security processes.
+Administrators control data access and resource provisioning for their users.</p>
+<p>Notebook Instances are another option.
+They have the familiar Jupyter and JuypterLab interfaces that work well for single users, or small teams where users are also administrators.</p>
+<p>Advanced users also use SageMaker solely with the AWS CLI and Python scripts using boto3 and/or the SageMaker Python SDK.
+Kubeflow users can setup workflows to use SageMaker directly as well. And Kubernetes users can setup their environment to use SageMaker operators for training and inference.</p>
+<p>This website offers examples for all types of customers and levels of expertise.</p>
+<p>But if you’re just getting started, we recommend that you check out the videos for Studio and Notebook Instances to decide which is best for you.</p>
+<p>After you watch the video and complete on-boarding, you will have cloned this examples repo and be able to run the notebooks from this website from within SageMaker.</p>
+<div class="section" id="get-started-with-sagemaker-studio">
+<h2>Get started with SageMaker Studio<a class="headerlink" href="#get-started-with-sagemaker-studio" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="get-started-with-sagemaker-notebook-instances">
+<h2>Get started with SageMaker Notebook Instances<a class="headerlink" href="#get-started-with-sagemaker-notebook-instances" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="introduction-to-applying-machine-learning">
+<h1>Introduction to applying machine learning<a class="headerlink" href="#introduction-to-applying-machine-learning" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="training">
+<h1>Training<a class="headerlink" href="#training" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="inference">
+<h1>Inference<a class="headerlink" href="#inference" title="Permalink to this headline">¶</a></h1>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Amazon SageMaker Example Notebooks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Amazon
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
