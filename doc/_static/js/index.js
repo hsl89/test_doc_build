@@ -3,7 +3,7 @@
 //# sourceMappingURL=index.js.map
 
 const shortbread = AWSCShortbread({
-    domain: ".readthedocs.io",
+    domain: "test-doc-build.readthedocs.io",
     onConsentChanged: () => {
         console.log("consent changed");
     }
