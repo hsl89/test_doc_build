@@ -10,4 +10,4 @@ const shortbread = AWSCShortbread({
 });
 
 shortbread.checkForCookieConsent();
-shortbread.customizeCookie(); 
+shortbread.customizeCookies(); 
